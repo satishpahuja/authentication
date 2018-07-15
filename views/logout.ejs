@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Logged out!</title>
+    <% include partials/head.ejs %>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <blockquote class="mainLines">
+                            <code><%=loggedOutUser%></code> you have been successfully logged out
+                            <br/> Please
+                            <a href="/login">login</a> again
+
+                        </blockquote>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <% include partials/jsIncludes.ejs %>
+</body>
+
+</html>

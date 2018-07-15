@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Registration Successful !</title>
+    <% include partials/head.ejs %>
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <p align="center" class="headingFont">
+                            Simple Authentication !!!
+                        </p>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <blockquote class="mainLines">
+                            Congratulation
+                            <code><%=session.newuser%></code>, your account have been created successfully
+                            <br/> Please
+                            <a href="/login">login</a> to the account you created recently.
+                        </blockquote>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <% include partials/jsIncludes.ejs %>
+
+</body>
+
+</html>
