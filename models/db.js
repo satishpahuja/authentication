@@ -7,7 +7,8 @@ const crypto = require('crypto');
 
 
 //URI without port is deprecated in latest releases and earlier code should be replaced with these two lines
-var dbURI = 'mongodb://localhost:27017/test';
+var dbURI = 'mongodb://authapp:authapp2018@ds139251.mlab.com:39251/authentication';
+//var dbURI = 'mongodb://localhost:27017/test';
 mongoose.connect(dbURI, {useNewUrlParser: true});
 
 mongoose.connection.on('connected',function(){
